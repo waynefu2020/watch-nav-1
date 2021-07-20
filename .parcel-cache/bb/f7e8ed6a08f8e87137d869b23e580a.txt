@@ -1,0 +1,17 @@
+16
+35D:\Coding\project\watch-nav-1\.idea132712571169215711 1
+33D:\Coding\project\watch-nav-1\src132712571168827106 1
+43D:\Coding\project\watch-nav-1\src\style.css132712570654934754 0
+34D:\Coding\project\watch-nav-1\dist132712571169996164 1
+44D:\Coding\project\watch-nav-1\src\index.html132712571168827106 0
+52D:\Coding\project\watch-nav-1\dist\index.bd78eeec.js132712571169974472 0
+41D:\Coding\project\watch-nav-1\src\main.js132712556215179015 0
+56D:\Coding\project\watch-nav-1\dist\index.bd78eeec.js.map132712571169989703 0
+53D:\Coding\project\watch-nav-1\dist\index.de60a1d7.css132712571169974472 0
+57D:\Coding\project\watch-nav-1\dist\index.de60a1d7.css.map132712571169989703 0
+45D:\Coding\project\watch-nav-1\dist\index.html132712571169974472 0
+46D:\Coding\project\watch-nav-1\.idea\.gitignore132712555014794087 0
+47D:\Coding\project\watch-nav-1\.idea\modules.xml132712554956064442 0
+43D:\Coding\project\watch-nav-1\.idea\vcs.xml132712562353879509 0
+51D:\Coding\project\watch-nav-1\.idea\watch-nav-1.iml132712554955970403 0
+49D:\Coding\project\watch-nav-1\.idea\workspace.xml132712571169214640 0
