@@ -12,11 +12,13 @@ body {
 
 .globalHeader {
     margin: 20px;
+
+}
+.searchForm{
     display: flex;
     justify-content: space-between;
 }
-
-.globalHeader > input {
+.searchForm > input {
     width: 100%;
     margin-right: 10px;
     height: 40px;
@@ -25,7 +27,7 @@ body {
     border: 1px solid #ddd;
 }
 
-.globalHeader > button {
+.searchForm > button {
     white-space: nowrap;
     padding: 0 28px;
     border: none;
@@ -78,4 +80,32 @@ body {
 
 .siteList .addButton {
     width: 160px;
+    border: 1px solid #ddd;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+.siteList .addButton .icon{
+    width: 56px;
+    height: 56px;
+}
+.siteList .addButton .text{
+    font-size: 14px;
+    margin-top: 4px;
+}
+.siteList .addButton .icon-wrapper{
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.siteList .icon{
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
 }
