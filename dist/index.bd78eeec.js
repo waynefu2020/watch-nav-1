@@ -453,10 +453,10 @@ const hashMap = xObject || [
     {logo: 'S', url: 'https://stackoverflow.com'},
 ]
 const simplifyUrl = (url)=>{
-    return url.replace('https://','')
-        .replace('http://','')
-        .replace('www.','')
-        .replace('/','')
+    return url.replace('https://', '')
+        .replace('http://', '')
+        .replace('www.', '')
+        .replace(/\/.*/, '')
 }
 const render = () => {
     $siteList.find('li:not(.last)').remove()
@@ -467,9 +467,18 @@ const render = () => {
                     <div class="site">
                        <div class="logo">${node.logo}</div>
                        <div class="link">${simplifyUrl(node.url)}</div>
+                       <div class="close">
+                           <svg class="icon" aria-hidden="true">
+                                <use xlink:href="#icon-close"></use>
+                            </svg>
+                        </div>
                     </div>
                 </a>
            </li>`).insertBefore($lastLi)
+        $li.on('click','.close',(e)=>{
+            console.log('阻止冒泡');
+            e.stopPropagation()
+        })
     })
 }
 

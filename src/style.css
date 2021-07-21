@@ -60,6 +60,14 @@ body {
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 20px 0;
+    position: relative;
+}
+
+.siteList .site > .close{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    color: red;
 }
 
 .siteList .site > .logo {
