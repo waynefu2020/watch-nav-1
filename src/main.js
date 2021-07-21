@@ -8,7 +8,8 @@ const hashMap = xObject || [
     {logo: 'R', url: 'https://react.docschina.org'},
     {logo: 'S', url: 'https://stackoverflow.com'},
 ]
-const simplifyUrl = (url)=>{
+
+const simplifyUrl = (url) => {
     return url.replace('https://', '')
         .replace('http://', '')
         .replace('www.', '')
@@ -17,9 +18,8 @@ const simplifyUrl = (url)=>{
 const render = () => {
     $siteList.find('li:not(.last)').remove()
 
-    hashMap.forEach(node => {
+    hashMap.forEach((node, index) => {
         const $li = $(`<li>
-                <a href="${node.url}">
                     <div class="site">
                        <div class="logo">${node.logo}</div>
                        <div class="link">${simplifyUrl(node.url)}</div>
@@ -29,11 +29,14 @@ const render = () => {
                             </svg>
                         </div>
                     </div>
-                </a>
            </li>`).insertBefore($lastLi)
-        $li.on('click','.close',(e)=>{
-            console.log('阻止冒泡');
+        $li.on('click', () => {
+            window.open(node.url)
+        })
+        $li.on('click', '.close', (e) => {
             e.stopPropagation()
+            hashMap.splice(index,1)
+            render()
         })
     })
 }
@@ -51,5 +54,5 @@ $('.addButton').on('click', () => {
 
 window.onbeforeunload = () => {
     const string = JSON.stringify(hashMap)
-    localStorage.setItem('x',string)
+    localStorage.setItem('x', string)
 }
